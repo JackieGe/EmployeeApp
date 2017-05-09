@@ -5,6 +5,6 @@
     background-color:darkgoldenrod;
 }
 
-#employeeList tr:not(first-child){
+#employeeList tr:not(first-child):hover{
     background-color: aquamarine;
 }

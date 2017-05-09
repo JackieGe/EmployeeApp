@@ -1,7 +1,8 @@
 const path = require('path');
-const webpack = require('webpack')
-const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin')
-const ExtractWebpackPlugin = require('extract-text-webpack-plugin')
+const webpack = require('webpack');
+const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
+const ExtractWebpackPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -14,17 +15,6 @@ module.exports = {
     },
     module: {
         loaders: [
-            // {
-            // test: /\.css$/,
-            /* include: [
-             path.resolve(__dirname)
-             ],
-             exclude: [
-             path.resolve(__dirname, 'node_modules')
-             ],*/
-            // loader: 'style-loader!css-loader',
-            //include: path.join(__dirname, 'src')
-            // },
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
@@ -50,7 +40,11 @@ module.exports = {
             filename:'js/vendor.bundle.js',
             minChunks: Infinity
         }),
-        new ExtractWebpackPlugin('styles.css')
+        new ExtractWebpackPlugin('css/[name].css'),
+        new HtmlWebpackPlugin({
+            filename:'index.html',
+            template:path.join(__dirname,'src/index.html')
+        })
     ],
     devtool: 'eval-source-map'
 
