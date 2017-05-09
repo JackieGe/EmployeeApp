@@ -1,0 +1,10 @@
+#employeeList {
+    border: 2px;
+}
+#employeeList tr:first-child{
+    background-color:darkgoldenrod;
+}
+
+#employeeList tr:not(first-child){
+    background-color: aquamarine;
+}

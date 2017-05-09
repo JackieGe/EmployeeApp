@@ -1,0 +1,16 @@
+<h3>
+    Employee List!
+</h3>
+
+<table id="employeeList">
+    <colgroup>
+        <col width="100">
+    </colgroup>
+    <tr>
+        <th>Name</th>
+    </tr>
+    <tr ng-repeat="employee in $ctrl.employees">
+        <td>{{employee}}</td>
+    </tr>
+</table>
+
