@@ -10,7 +10,7 @@
         <th>Name</th>
     </tr>
     <tr ng-repeat="employee in $ctrl.employees">
-        <td>{{employee}}</td>
+        <td ng-click="$ctrl.selectEmployee(employee)">{{employee}}</td>
     </tr>
 </table>
 

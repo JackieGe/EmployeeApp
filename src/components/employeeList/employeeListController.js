@@ -10,6 +10,10 @@ class EmployeeListController {
             'Tom'
         ];
     }
+
+    selectEmployee(employee) {
+        alert(`${employee} is selected`);
+    }
 }
 
 EmployeeListController.$inject = [];
