@@ -43,7 +43,10 @@ module.exports = {
         new ExtractWebpackPlugin('css/[name].css'),
         new HtmlWebpackPlugin({
             filename:'index.html',
-            template:path.join(__dirname,'src/index.html')
+            template:path.join(__dirname,'src/index.html'),
+            inject:'body',
+            hash: true,
+            chunks: ['app', 'vendor']
         })
     ],
     devtool: 'eval-source-map'
