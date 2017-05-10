@@ -1,0 +1,22 @@
+#employeeBioContent {
+    text-align: center;
+}
+
+#employeeBioContent ul{
+    display: flex;
+}
+#employeeBioContent ul >li{
+    list-style-type: none;
+}
+
+.employee-property {
+    text-align: right;
+    margin-right: 5px;
+    width: 80px;
+}
+
+.employee-property-value{
+    text-align: left;
+    font-family: Arial;
+    background-color: aliceblue;
+}

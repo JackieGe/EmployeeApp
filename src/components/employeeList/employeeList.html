@@ -1,6 +1,3 @@
-<h3>
-    Employee List!
-</h3>
 
 <table id="employeeList">
     <colgroup>
@@ -10,7 +7,7 @@
         <th>Name</th>
     </tr>
     <tr ng-repeat="employee in $ctrl.employees">
-        <td ng-click="$ctrl.selectEmployee(employee)">{{employee}}</td>
+        <td ng-click="$ctrl.clickEmployee(employee)" ng-class="$ctrl.getEmployeeRowStyle(employee)">{{employee.firstName + "  " +employee.lastName}} </td>
     </tr>
 </table>
 

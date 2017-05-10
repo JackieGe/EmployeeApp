@@ -1,0 +1,10 @@
+#employeePage {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+}
+
+#employeePage .left {
+    display: flex;
+    padding-top: 20px;
+}

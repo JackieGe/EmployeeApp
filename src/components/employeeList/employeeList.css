@@ -1,10 +1,14 @@
 #employeeList {
     border: 2px;
 }
-#employeeList tr:first-child{
-    background-color:darkgoldenrod;
+#employeeList tr:first-child, #employeeList tr:first-child:hover{
+    background-color:darkgray;
 }
 
-#employeeList tr:not(first-child):hover{
+#employeeList tr:hover{
+    background-color: aquamarine;
+}
+
+.selected-row {
     background-color: aquamarine;
 }
