@@ -5,6 +5,7 @@
   },
   "rules": {
     "eqeqeq": "error",
-    "no-empty": "error"
+    "no-empty": "error",
+    "no-unused-vars": "error"
   }
 }

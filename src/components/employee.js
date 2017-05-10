@@ -4,15 +4,15 @@
 import angular from 'angular'
 import EmployeeListController from './employeeList/employeeListController'
 import employeeListTemplate from './employeeList/employeeList.html'
-import employeeListCSS from './employeeList/employeeList.css'
+import './employeeList/employeeList.css'
 
 import EmployeeBioContentController from './employeeBioContent/employeeBioContentController'
 import employeeBioContentTemplate from './employeeBioContent/employeeBioContent.html'
-import employeeBioContentCSS from './employeeBioContent/employeeBioContent.css'
+import './employeeBioContent/employeeBioContent.css'
 
 import EmployeePageController from './employeePage/EmployeePageController'
 import employeePageTemplate from './employeePage/employeePage.html'
-import employeePageCSS from './employeePage/employeePage.css'
+import './employeePage/employeePage.css'
 
 export default angular.module('employee', [])
     // employee list

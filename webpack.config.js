@@ -37,7 +37,7 @@ module.exports = {
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({
             name:'vendor',
-            filename:'js/vendor.bundle.js',
+            filename:'js/[name].bundle.js',
             minChunks: Infinity
         }),
         new ExtractWebpackPlugin('css/[name].css'),
