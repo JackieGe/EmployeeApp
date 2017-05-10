@@ -1,0 +1,10 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion":6
+  },
+  "rules": {
+    "eqeqeq": "error",
+    "no-empty": "error"
+  }
+}

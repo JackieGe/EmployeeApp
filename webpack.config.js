@@ -17,7 +17,7 @@ module.exports = {
         loaders: [
             {
                 test: /\.js$/,
-                loader: 'babel-loader',
+                loader: 'babel-loader!eslint-loader',
                 exclude: /node_modules/
                 //include: path.join(__dirname, 'src'),
             },
@@ -48,8 +48,8 @@ module.exports = {
             hash: true,
             chunks: ['app', 'vendor']
         })
-    ],
-    devtool: 'eval-source-map'
+    ]//,
+   // devtool: 'eval-source-map'
 
     /* resolve: {
      extensions: ['.json', '.js', '.jsx', '.css']
