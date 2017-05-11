@@ -1,6 +1,7 @@
 // Karma configuration
 // Generated on Thu May 11 2017 21:22:47 GMT+0800 (CST)
 
+
 module.exports = function(config) {
   config.set({
 
@@ -34,8 +35,12 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['progress', 'coverage'],
 
+    coverageReporter: {
+        type:'html',
+        dir:'coverage/'
+    },
 
     // web server port
     port: 9876,
@@ -56,12 +61,12 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
 
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false,
+    singleRun: true,
 
     // Concurrency level
     // how many browser should be started simultaneous
@@ -75,7 +80,8 @@ module.exports = function(config) {
                   loader:'babel-loader',
                   exclude:/node_modules/,
                   query: {
-                      presets:['es2015']
+                      presets:['es2015'],
+                      plugins:['istanbul']
                   }
               }
           ]

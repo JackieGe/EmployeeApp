@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "karma start && webpack",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.0.0",
+    "babel-plugin-istanbul": "^4.1.3",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-es2016": "^6.24.1",
     "css-loader": "^0.28.1",
@@ -26,13 +28,17 @@
     "jasmine-core": "^2.6.1",
     "karma": "^1.7.0",
     "karma-chrome-launcher": "^2.1.1",
+    "karma-coverage": "^1.1.1",
     "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
     "karma-webpack": "^2.0.3",
+    "phantomjs-prebuilt": "^2.1.14",
     "style-loader": "^0.17.0",
     "webpack": "^2.5.1"
   },
   "dependencies": {
     "angular": "^1.6.4",
+    "express": "^4.15.2",
     "jquery": "^3.2.1"
   }
 }

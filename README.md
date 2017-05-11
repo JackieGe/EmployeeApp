@@ -17,10 +17,16 @@ Install nodejs and check its version after its installation:
    
     In China we can use taobao image:
     
-    `npm config set registry "https://registry.npm.taobao.org/"`
+    `npm install --registry "https://registry.npm.taobao.org/"`
 
 3. Build.
     
     `npm run build`
+
+4. Start
     
-4. A dist folder is created. Please just open the index.html with your browser, recommend using Chrome, firefox, IE 11 or above 
+    `npm start`
+    
+    Then can access http://localhost:8081
+    
+5. A dist folder is created. Please just open the index.html with your browser, recommend using Chrome, firefox, IE 11 or above 
