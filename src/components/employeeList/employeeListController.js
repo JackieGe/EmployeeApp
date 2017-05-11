@@ -16,6 +16,7 @@ class EmployeeListController {
 
     clickEmployee(employee) {
         let alertMessage = "";
+
         if (!this.selectedEmployee || this.selectedEmployee.id !== employee.id) {
             this.selectedEmployee = employee;
             alertMessage = `You have selected ${employee.firstName} ${employee.lastName}`;
