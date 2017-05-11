@@ -48,8 +48,8 @@ module.exports = {
             hash: true,
             chunks: ['app', 'vendor']
         })
-    ]//,
-   // devtool: 'eval-source-map'
+    ],
+    devtool: 'eval-source-map'
 
     /* resolve: {
      extensions: ['.json', '.js', '.jsx', '.css']

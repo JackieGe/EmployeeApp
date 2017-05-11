@@ -4,8 +4,7 @@
 
 class EmployeeListController {
 
-    constructor($scope) {
-        this.$scope = $scope;
+    constructor() {
 
         this.employees = [
             { id:1, firstName: 'Jackie', lastName: "Ge", sex: "Male", age: 33, title: "Software developer" },
@@ -25,7 +24,8 @@ class EmployeeListController {
             alertMessage = `You deselected ${employee.firstName} ${employee.lastName}`;
         }
 
-        this.$scope.$emit('onEmployeeSelected', this.selectedEmployee);
+        this.onEmployeeSelected()(this.selectedEmployee);
+
         setTimeout(() => {
             alert(alertMessage);
         })
@@ -39,7 +39,5 @@ class EmployeeListController {
         }
     }
 }
-
-EmployeeListController.$inject = ['$scope'];
 
 export default EmployeeListController

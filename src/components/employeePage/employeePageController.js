@@ -1,15 +1,10 @@
 class EmployeePageController {
-    constructor ($scope) {
+    constructor () {
         this.selectedEmployee = undefined;
-        $scope.$on('onEmployeeSelected', (e, data) => {
-            this.selectedEmployee = data;
-            if (data) {
-                $scope.$broadcast('onEmployeeArrived', data)
-            }
-        })
+        this.onEmployeeSelected = (employee) => {
+            this.selectedEmployee = employee;
+        }
     }
 }
-
-EmployeePageController.$inject = ['$scope']
 
 export default EmployeePageController

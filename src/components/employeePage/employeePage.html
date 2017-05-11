@@ -1,8 +1,8 @@
 <div id="employeePage">
     <div class="left">
-        <employee-list >
+        <employee-list on-employee-selected="$ctrl.onEmployeeSelected">
         </employee-list>
     </div>
-    <employee-bio-content ng-show="$ctrl.selectedEmployee">
+    <employee-bio-content ng-if="$ctrl.selectedEmployee" employee="$ctrl.selectedEmployee" >
     </employee-bio-content>
 </div>

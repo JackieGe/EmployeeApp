@@ -10,7 +10,7 @@ import EmployeeBioContentController from './employeeBioContent/employeeBioConten
 import employeeBioContentTemplate from './employeeBioContent/employeeBioContent.html'
 import './employeeBioContent/employeeBioContent.css'
 
-import EmployeePageController from './employeePage/EmployeePageController'
+import EmployeePageController from './employeePage/employeePageController'
 import employeePageTemplate from './employeePage/employeePage.html'
 import './employeePage/employeePage.css'
 
@@ -21,7 +21,7 @@ export default angular.module('employee', [])
         return {
             restrict: 'E',
             scope: {
-
+                onEmployeeSelected:"&"
             },
             //replace: true,
             template: employeeListTemplate,
@@ -36,6 +36,7 @@ export default angular.module('employee', [])
         return {
             restrict: 'E',
             scope: {
+                employee:"="
             },
             template: employeeBioContentTemplate,
             controller: EmployeeBioContentController,
@@ -44,12 +45,10 @@ export default angular.module('employee', [])
         }
     })
     // employee page, which would consist of the employee list and employee bio content
-    .controller('employeePageController', EmployeePageController)
     .directive('employeePage', function () {
         return {
             restrict: 'E',
-            scope: {
-            },
+            scope: {},
             template: employeePageTemplate,
             controller: EmployeePageController,
             controllerAs: '$ctrl',
