@@ -27,6 +27,4 @@ Install nodejs and check its version after its installation:
     
     `npm start`
     
-    Then can access http://localhost:8081
-    
-5. A dist folder is created. Please just open the index.html with your browser, recommend using Chrome, firefox, IE 11 or above 
+    Then can access `http://localhost:8081`, recommend using Chrome, firefox, IE 11 or above 
