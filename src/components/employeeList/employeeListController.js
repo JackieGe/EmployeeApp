@@ -2,10 +2,9 @@
  * Created by jackie on 08/05/2017.
  */
 
-class EmployeeListController {
+export default class EmployeeListController {
 
     constructor() {
-
         this.employees = [
             { id:1, firstName: 'Jackie', lastName: "Ge", sex: "Male", age: 33, title: "Software developer" },
             { id:2, firstName: 'Lily', lastName: "Lee", sex: "Female", age: 28, title: "Designer" }
@@ -40,5 +39,3 @@ class EmployeeListController {
         }
     }
 }
-
-export default EmployeeListController

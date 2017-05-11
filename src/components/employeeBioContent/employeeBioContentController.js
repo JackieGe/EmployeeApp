@@ -1,9 +1,7 @@
 /**
  * Created by jackie on 10/05/2017.
  */
-class EmployeeBioContentController {
+export default class EmployeeBioContentController {
     constructor() {
     }
 }
-
-export default EmployeeBioContentController
