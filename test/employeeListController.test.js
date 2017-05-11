@@ -14,8 +14,13 @@ describe("Test EmployeeListController", function () {
             { id:101, firstName: 'Jackie', lastName: "Ge", sex: "Male", age: 33, title: "Software developer" },
             { id:102, firstName: 'Lily', lastName: "Lee", sex: "Female", age: 28, title: "Designer" }
         ];
-        controller = new EmployeeListController();
-        controller.employees = employeeList;
+        let employeeService = {
+            getEmployees: function () {
+                return employeeList;
+            }
+        }
+
+        controller = new EmployeeListController(employeeService);
         controller.onEmployeeSelected = function () {
             return function (employee) {
                 selectedEmployee = employee;

@@ -4,12 +4,8 @@
 
 export default class EmployeeListController {
 
-    constructor() {
-        this.employees = [
-            { id:1, firstName: 'Jackie', lastName: "Ge", sex: "Male", age: 33, title: "Software developer" },
-            { id:2, firstName: 'Lily', lastName: "Lee", sex: "Female", age: 28, title: "Designer" }
-        ];
-
+    constructor(employeeService) {
+        this.employees = employeeService.getEmployees();
         this.selectedEmployee = undefined;
     }
 
@@ -39,3 +35,5 @@ export default class EmployeeListController {
         }
     }
 }
+
+EmployeeListController.$inject = ['employeeService']

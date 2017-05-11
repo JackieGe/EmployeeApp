@@ -2,6 +2,8 @@
  * Created by jackie on 09/05/2017.
  */
 import angular from 'angular'
+import common from '../common/common'
+
 import EmployeeListController from './employeeList/employeeListController'
 import employeeListTemplate from './employeeList/employeeList.html'
 import './employeeList/employeeList.css'
@@ -14,7 +16,7 @@ import EmployeePageController from './employeePage/employeePageController'
 import employeePageTemplate from './employeePage/employeePage.html'
 import './employeePage/employeePage.css'
 
-export default angular.module('employee', [])
+export default angular.module('employee', [common.name])
     // employee list
     .controller('employeeListController', EmployeeListController)
     .directive('employeeList', function () {
