@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "karma start",
-    "build": "karma start && webpack",
+    "test:unit": "karma start",
+    "test:e2e": "protractor ./protractor/config.js",
+    "test": "npm run test:unit && npm run test:e2e",
+    "build": "npm run test:unit && webpack",
     "start": "node server.js"
   },
   "author": "",

@@ -27,4 +27,31 @@ Install nodejs and check its version after its installation:
     
     `npm start`
     
-    Then can access `http://localhost:8081`, recommend using Chrome, firefox, IE 11 or above 
+    Then can access `http://localhost:8081`, recommend using Chrome, firefox, IE 11 or above
+     
+### e2e testing
+1. Install protractor 
+   `npm install -g protractor`
+   
+   For Mac and Linux, we may need super right:
+   `sudo npm install -g protractor`
+   
+2. Update webdriver-manager
+
+   `webdrive-manager udpate`
+   
+   For Mac and Linux, we may need super right:
+   
+   `sudo webdrive-manager update`
+   
+3. Start Selenuim Server
+
+   `webdriver manager start`
+   
+    For Mac and Linux, we may need super right:
+      
+    `sudo webdrive-manager start`
+    
+4. Open terminal and cd to the project root folder, then do:
+ 
+   `npm run test:e2e` or `protractor config.js`
