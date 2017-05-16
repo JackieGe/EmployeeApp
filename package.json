@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:unit": "karma start",
-    "test:e2e": "protractor ./protractor/config.js",
+    "test:e2e": "protractor ./e2e/config.js",
     "test": "npm run test:unit && npm run test:e2e",
     "build": "npm run test:unit && webpack",
     "releasedocker": "npm run build && docker build -t empwebserv:0.1 .",

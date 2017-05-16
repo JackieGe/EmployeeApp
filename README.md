@@ -38,11 +38,11 @@ Install nodejs and check its version after its installation:
    
 2. Update webdriver-manager
 
-   `webdrive-manager udpate`
+   `webdriver-manager udpate`
    
    For Mac and Linux, we may need super right:
    
-   `sudo webdrive-manager update`
+   `sudo webdriver-manager update`
    
 3. Start Selenuim Server
 
@@ -50,7 +50,7 @@ Install nodejs and check its version after its installation:
    
     For Mac and Linux, we may need super right:
       
-    `sudo webdrive-manager start`
+    `sudo webdriver-manager start`
     
 4. Open terminal and cd to the project root folder, then do:
  
