@@ -8,6 +8,8 @@
     "test:e2e": "protractor ./protractor/config.js",
     "test": "npm run test:unit && npm run test:e2e",
     "build": "npm run test:unit && webpack",
+    "releasedocker": "npm run build && docker build -t empwebserv:0.1 .",
+    "startcontainer": "docker run -p 8081:8081 --name empwebserv01 -d empwebserv:0.1",
     "start": "node server.js"
   },
   "author": "",

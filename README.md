@@ -55,3 +55,14 @@ Install nodejs and check its version after its installation:
 4. Open terminal and cd to the project root folder, then do:
  
    `npm run test:e2e` or `protractor config.js`
+   
+### Docker support
+If you want to use docker, you follow:
+
+`npm run releasedocker`
+
+and then
+
+`npm run startcontainer`
+
+Then you can access `http://localhost:8081`
